@@ -1,4 +1,3 @@
-# Use a versão mais recente do Node.js
 FROM node:20
 
 # Create and set the working directory
@@ -11,7 +10,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# Expose the port the app runs on
 EXPOSE 3000
 
 # Run the app
